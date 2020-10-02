@@ -10,11 +10,9 @@ const Drawer = createDrawerNavigator();
 const DrawerNavigator = () => {
     return (
         <Drawer.Navigator>
-
-            <Drawer.Screen name="PizzaScreen" component={PizzaScreen} />
-            <Drawer.Screen name="TemakiScreen" component={TemakiScreen} />
-            <Drawer.Screen name="Root" component={BottonTabNavigator} />
-
+            <Drawer.Screen name="PizzaScreen" component={BottonTabNavigator} />
+            <Drawer.Screen name="TemakiScreen" component={BottonTabNavigator} />
+            <Drawer.Screen name="CronometroScreen" component={BottonTabNavigator} />
         </Drawer.Navigator>
     )
 }

@@ -14,8 +14,7 @@ const Navigator = () => {
     <Stack.Navigator initialRouteName="Login">
       <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
       <Stack.Screen name="Welcome" component={Welcome} options={{ headerShown: false }} />
-      <Stack.Screen name="Root" component={DrawerNavigator} />
-
+      <Stack.Screen name="Root" component={DrawerNavigator} options={{ headerShown: false }} />
     </Stack.Navigator>
 
   );

@@ -14,12 +14,12 @@ const BottonTabNavigator = () => {
   return (
     <Tab.Navigator >
 
-      <Tab.Screen name="welcome"
-        component={Welcome}
+      <Tab.Screen name="PizzaScreen"
+        component={PizzaScreen}
         options={{
-          tabBarLabel: 'Welcome',
+          tabBarLabel: 'Pizza',
           tabBarIcon: ({ color, size }) => (
-            <Icon name="timer" color={color} size={size} />
+            <Icon name="pizza" color={color} size={size} />
           ),
           tabBarBadge: 2,
         }} />
@@ -33,15 +33,7 @@ const BottonTabNavigator = () => {
           ),
           tabBarBadge: 3,
         }} />
-      <Tab.Screen name="PizzaScreen"
-        component={PizzaScreen}
-        options={{
-          tabBarLabel: 'Pizza',
-          tabBarIcon: ({ color, size }) => (
-            <Icon name="pizza" color={color} size={size} />
-          ),
-          tabBarBadge: 2,
-        }} />
+
       <Tab.Screen name="Cronometro"
         component={Cronometro}
         options={{

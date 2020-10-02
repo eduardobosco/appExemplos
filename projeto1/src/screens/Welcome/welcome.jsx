@@ -28,11 +28,20 @@ const Welcome = ({ navigation }) => {
     }
 
     const goToPizzaScreen = () => {
-        <DrawerNavigator />;
+        navigation.navigate('Root', {
+            screen: 'PizzaScreen', params: {
+                screen: 'PizzaScreen',
+            }
+        });
     };
 
     const goToTemakiScreen = () => {
-        navigation.navigate('TemakiScreen');
+        navigation.navigate('Root', {
+            screen: 'TemakiScreen', params: {
+                screen: 'TemakiScreen',
+            }
+        });
+
     };
 
     return (
